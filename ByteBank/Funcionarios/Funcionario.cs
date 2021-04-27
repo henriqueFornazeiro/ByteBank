@@ -14,7 +14,6 @@ namespace ByteBank.Funcionarios
         public string Nome { get; set; }
         public string CPF { get; private set; }
         public double Salario { get; protected set; } //protected - será publico apenas para a própria classe quanto para classes derivadas.
-
         public Funcionario(double salario, string cpf)
         {
             Console.WriteLine("Criando Funcionário...");
@@ -22,16 +21,12 @@ namespace ByteBank.Funcionarios
             Salario = salario;
             TotalDeFuncionarios++;
         }
-        //virtual - classes derivadas que herdam a classe base podem mudar a implementação
-        public virtual void AumentarSalario()
-        {
-            Salario *= 1.1;
-        }
 
-        public virtual double GetBonificacao()
-        {
-            return Salario * 0.1;
-        }
+        //virtual - classes derivadas que herdam a classe base podem mudar a implementação
+        public abstract void AumentarSalario();
+
+        public abstract double GetBonificacao();
+       
 
     }
 }

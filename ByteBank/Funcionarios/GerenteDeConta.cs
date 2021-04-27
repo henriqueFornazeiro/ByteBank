@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 
 namespace ByteBank
 {
-    class GerenteDeConta : Funcionario
+    class GerenteDeConta : Autenticavel
     {
+        
         public GerenteDeConta(double salario, string cpf) : base(salario, cpf) //Passando o cpf para a classe Funcionario
         {
         
