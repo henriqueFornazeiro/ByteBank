@@ -43,7 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Sistemas\Autenticavel.cs" />
+    <Compile Include="Funcionarios\FuncionarioAutenticavel.cs" />
+    <Compile Include="ParceiroComercial.cs" />
+    <Compile Include="Sistemas\IAutenticavel.cs" />
     <Compile Include="Funcionarios\Auxiliar.cs" />
     <Compile Include="Funcionarios\Designer.cs" />
     <Compile Include="Funcionarios\Diretor.cs" />

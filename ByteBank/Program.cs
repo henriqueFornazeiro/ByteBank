@@ -56,8 +56,12 @@ namespace ByteBank
             Auxiliar auxiliar = new Auxiliar(2000, "789.654.321-13");
             auxiliar.Nome = "Igor";
 
+            ParceiroComercial parceiro = new ParceiroComercial();
+            parceiro.Senha = "321";
+
             sistemaInterno.Logar(diretor, "123");
             sistemaInterno.Logar(gerenteDeConta, "abc");
+            sistemaInterno.Logar(parceiro, "321");
             //sistemaInterno.Logar(auxiliar, "abc");
         }
 

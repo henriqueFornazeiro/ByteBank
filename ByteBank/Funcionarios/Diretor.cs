@@ -6,14 +6,11 @@ using System.Threading.Tasks;
 
 namespace ByteBank.Funcionarios
 {
-    public class Diretor : Autenticavel
+    public class Diretor : FuncionarioAutenticavel, IAutenticavel
     {
         
+        public Diretor(double salario, string cpf) : base(salario, cpf) { } //Passando o cpf para a classe Funcionario 
 
-        public Diretor(double salario, string cpf) : base(salario, cpf) //Passando o cpf para a classe Funcionario
-        {
-
-        }
         //override - sobrescreve uma implementação da classe base
         public override void AumentarSalario()
         {
