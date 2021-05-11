@@ -1,4 +1,5 @@
-﻿using ByteBank.Funcionarios;
+﻿using _07_ByteBank;
+using ByteBank.Funcionarios;
 using ByteBank.Sistemas;
 using System;
 using System.Collections.Generic;
@@ -13,7 +14,11 @@ namespace ByteBank
         static void Main(string[] args)
         {
             //CalcularBonificacao();
-            UsarSistema();
+            //UsarSistema();
+
+            ContaCorrente conta = new ContaCorrente(7740, 874150);
+            Console.WriteLine(ContaCorrente.TaxaOperacao);
+
             Console.ReadLine();
         }
 
